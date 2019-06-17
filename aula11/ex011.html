@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>País</title>
+    </head>
+    <body>
+        <h1>Nacionalidade</h1>
+        Vivendo em: <input type="text" name="txtpais" id="txtpais"/>
+        <input type="button" value="Verificar" onclick="verificar()"/>
+        <div id="res">
+
+        </div>
+        <script>
+            function verificar() {
+                let txtpais = document.querySelector('input#txtpais');
+                let res = document.querySelector('div#res');
+                let pais = txtpais.value;
+                if(pais === 'Brasil') {
+                    res.innerHTML = '<p>Você é Brasileiro!</p>';
+                } else {
+                    res.innerHTML = '<p>Você é Estrangeiro!</p>';
+                }
+            }
+        </script>
+    </body>
+</html>
