@@ -13,7 +13,7 @@ do {
 } while (contador <= 6)
 
 
-console.log('\nEstruturado')
+console.log('\nSequência')
 console.log('Passo 1')
 console.log('Passo 2')
 console.log('Passo 3')
